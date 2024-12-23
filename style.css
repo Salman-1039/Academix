@@ -1,0 +1,163 @@
+/*
+Theme Name: AcademiX
+Theme URI: http://example.com/
+Author: Salman Tariq
+Author URI: http://example.com/
+Description: A custom WordPress theme
+Version: 1.0
+License: GNU General Public License v2 or later
+Text Domain: AcademiX
+*/
+header {
+    display: flex;
+    justify-content: space-between; /* Adjust alignment (center, space-around, etc.) */
+    align-items: center; /* Vertically align items */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(173, 169, 169, 0.467);
+    padding: 10px 20px; /* Add some spacing */
+    background-color: #f0f0f0; /* Optional: Add a background color */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the header stays above other elements */
+}
+
+.logo img {
+    max-height: 50px; /* Adjust height */
+    margin-right: 20px; /* Space between logo and menu */
+}
+  
+
+/* Style the navigation menu container */
+.primary-menu-container {
+    flex-grow: 1; /* Allow menu to grow and fill available space */
+    display: flex; /* Make the menu items horizontal */
+    justify-content: center; /* Center the menu items */
+}
+
+/* Style the menu items */
+.primary-menu {
+    display: flex; /* Make the menu items horizontal */
+    list-style: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style individual menu links */
+.primary-menu li {
+    margin: 0 15px; /* Space between menu items */
+}
+
+.primary-menu a {
+    text-decoration: none; /* Remove underline */
+    color: #000; /* Set text color */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold;
+}
+
+.primary-menu a:hover {
+    color: #0f0f0f; /* Add hover effect */
+}
+
+/* Auth buttons */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: auto; /* Push buttons to the right */
+}
+
+/* Button styles */
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Login button style */
+.login-btn {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Register button style */
+.register-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #f0f0f0;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-block {
+    flex: 1;
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-menu li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-menu li a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-menu li a:hover {
+    color: #00bcd4;
+  }
+
+  .footer {
+    border-top: 1px solid #797878; /* Add a thin gray line above the footer */
+    padding-top: 20px; /* Space between the line and footer content */
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    margin-top: 20px;
+    padding: 10px 0;
+  }
+  
+  .footer-copyright a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .footer-copyright a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .footer-blocks {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
